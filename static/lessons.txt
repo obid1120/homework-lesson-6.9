@@ -1,0 +1,4 @@
+Intro django
+Django view
+Django template
+Django static

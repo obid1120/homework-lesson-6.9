@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Themes
+{% endblock %}
+
+{% block content %}
+	<h1>Themes list</h1>
+    <table style="text-align: left">
+        {% for theme in themes %}
+            <tr>
+                <td style="font-size: 30px">{{ theme }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
