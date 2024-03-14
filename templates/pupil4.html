@@ -39,10 +39,10 @@
         </tr>
     </table>
 	<div style="text-align: left; margin-left: 20px;">
-        <p><a href="/pupils" style="text-decoration: none">Main page</a></p>
-        <p><a href="/pupils/1" style="text-decoration: none">Yusufjon Muhammadov</a></p>
-        <p><a href="/pupils/2" style="text-decoration: none">Nurbek Doniyorov</a></p>
-        <p><a href="/pupils/3" style="text-decoration: none">Boburmirzo Muhammadov</a></p>
-        <p><a href="/pupils/5" style="text-decoration: none">Muhammadjon Ibrohimov</a></p>
+        <p><a href="{% url 'pupils' %}" style="text-decoration: none">Main page</a></p>
+        <p><a href="{% url '1' %}" style="text-decoration: none">Yusufjon Muhammadov</a></p>
+        <p><a href="{% url '2' %}" style="text-decoration: none">Nurbek Doniyorov</a></p>
+        <p><a href="{% url '3' %}" style="text-decoration: none">Boburmirzo Muhammadov</a></p>
+        <p><a href="{% url '5' %}" style="text-decoration: none">Muhammadjon Ibrohimov</a></p>
     </div>
 {% endblock %}

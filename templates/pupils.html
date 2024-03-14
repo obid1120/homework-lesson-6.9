@@ -6,10 +6,8 @@
 {% block content %}
 	<h1>Pupils list</h1>
     <div style="text-align: left; margin-left: 20px;">
-        <p><a href="1/" style="text-decoration: none">Yusufjon Muhammadov</a></p>
-        <p><a href="2/" style="text-decoration: none">Nurbek Doniyorov</a></p>
-        <p><a href="3/" style="text-decoration: none">Boburmirzo Muhammadov</a></p>
-        <p><a href="4/" style="text-decoration: none">Fazliddin Asomov</a></p>
-        <p><a href="5/" style="text-decoration: none">Muhammadjon Ibrohimov</a></p>
+        {% for num, pupil in pupils_ls.items %}
+            <p><a href="{{ num }}" style="text-decoration: none">{{ pupil }}</a></p>
+        {% endfor %}
     </div>
 {% endblock %}
